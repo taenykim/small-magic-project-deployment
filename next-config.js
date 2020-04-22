@@ -5,5 +5,5 @@
 const debug = process.env.NODE_ENV !== 'production'
 
 module.exports = {
-  assetPrefix: !debug ? '/small-magic-project-deployment/' : '',
+  assetPrefix: !debug ? 'https://taenykim/github.io/small-magic-project-deployment/' : '',
 }
