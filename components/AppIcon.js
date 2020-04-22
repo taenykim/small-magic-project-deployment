@@ -36,7 +36,7 @@ const AppIconContainer = styled.div`
 `
 
 const AppIcon = ({ idx }) => {
-  let url = `${process.env.BACKEND_URL}/page${idx}`
+  let url = `/page${idx}`
   const str = 'PAGE' + idx
 
   return (
