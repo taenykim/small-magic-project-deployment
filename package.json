@@ -6,18 +6,15 @@
   "scripts": {
     "dev": "next -p 3001",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && touch out/.nojekyll && git add out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "immer": "^5.3.6",
-    "lodash": "^4.17.15",
     "next": "^9.2.2",
     "next-redux-wrapper": "^5.0.0",
     "react": "^16.12.0",
-    "react-beautiful-dnd": "^13.0.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
