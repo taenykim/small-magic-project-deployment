@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AppContainer from '../components/AppContainer'
-const PAGE_COUNT = 20
+const PAGE_COUNT = 10
 const pageNumbers = []
 
 for (let i = 0; i < PAGE_COUNT; i++) {
