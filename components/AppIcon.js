@@ -40,7 +40,7 @@ const AppIcon = ({ idx }) => {
   const appIconName = 'PAGE' + idx
 
   return (
-    <Link href={url} as={process.env.BACKEND_URL + url}>
+    <Link href={url}>
       <a style={{ textDecoration: 'none' }}>
         <AppIconContainer idx={idx}>
           <div>{appIconName}</div>
