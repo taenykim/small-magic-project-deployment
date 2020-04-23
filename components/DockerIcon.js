@@ -35,7 +35,7 @@ const AppIconContainer = styled.div`
 const DockerIcon = ({ item }) => {
   const url = `/${item}`
   return (
-    <Link href={url}>
+    <Link href={url} as={process.env.BACKEND_URL + url}>
       <a style={{ textDecoration: 'none' }}>
         <AppIconContainer idx={Number(item.slice(4))}>
           <div>{Number(item.slice(4))}</div>

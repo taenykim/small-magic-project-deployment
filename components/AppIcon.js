@@ -36,14 +36,11 @@ const AppIconContainer = styled.div`
 `
 
 const AppIcon = ({ idx }) => {
-  const url =
-    process.env.NODE_ENV === 'production'
-      ? `https://taenykim.github.io/small-magic-project-deployment/page${idx}`
-      : `/page${idx}`
+  const url = `/page${idx}`
   const str = 'PAGE' + idx
 
   return (
-    <Link href={url}>
+    <Link href={url} as={process.env.BACKEND_URL + url}>
       <a style={{ textDecoration: 'none' }}>
         <AppIconContainer idx={idx}>
           <div>{str}</div>
