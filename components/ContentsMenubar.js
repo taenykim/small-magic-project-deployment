@@ -60,14 +60,14 @@ const ContentsMenubar = ({ name }) => {
 
   return (
     <ContentsMenubarContainer>
-      <Link href="/" as={process.env.BACKEND_URL + '/'}>
+      <Link href="/">
         <a style={{ margin: '2px 2px 2px 10px' }}>
           <ImageContainer onClick={storeReset}>
             <img src="./cancel.png" />
           </ImageContainer>
         </a>
       </Link>
-      <Link href="/" as={process.env.BACKEND_URL + '/'}>
+      <Link href="/">
         <a style={{ margin: '2px 2px 2px 10px' }}>
           <ImageContainer onClick={storeHandler}>
             <img src="./bottom_arrow.png"></img>
