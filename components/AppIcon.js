@@ -37,13 +37,13 @@ const AppIconContainer = styled.div`
 
 const AppIcon = ({ idx }) => {
   const url = `/page${idx}`
-  const str = 'PAGE' + idx
+  const appIconName = 'PAGE' + idx
 
   return (
     <Link href={url} as={process.env.BACKEND_URL + url}>
       <a style={{ textDecoration: 'none' }}>
         <AppIconContainer idx={idx}>
-          <div>{str}</div>
+          <div>{appIconName}</div>
         </AppIconContainer>
       </a>
     </Link>

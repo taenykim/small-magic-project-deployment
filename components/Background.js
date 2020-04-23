@@ -32,7 +32,7 @@ const Background = ({ children }) => {
       <BackgroundContainer>
         <a href="https://github.com/taenykim/small-magic-project" target="_blank">
           <FixedGithub>
-            <img src="./github.png" width="28" height="28" />
+            <img src={process.env.BACKEND_URL + '/github.png'} width="28" height="28" />
           </FixedGithub>
         </a>
         <Header></Header>

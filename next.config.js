@@ -3,7 +3,8 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const debug = process.env.NODE_ENV !== 'production'
+const name = 'small-magic-project-deployment'
 
 module.exports = {
-  assetPrefix: !debug ? '/small-magic-project-deployment/' : '',
+  assetPrefix: !debug ? `/${name}/` : '',
 }
