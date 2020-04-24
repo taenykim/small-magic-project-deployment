@@ -22,8 +22,8 @@ const Container = styled.div`
     if (props.idx % 9 === 4) return 'green'
     if (props.idx % 9 === 5) return 'navy'
     if (props.idx % 9 === 6) return 'darkgoldenrod'
-    if (props.idx % 9 === 7) return 'darkcyan'
-    if (props.idx % 9 === 8) return 'darkmagenta'
+    if (props.idx % 9 === 7) return 'darkmagenta'
+    if (props.idx % 9 === 8) return 'darkcyan'
     return 'black'
   }};
   display: flex;
